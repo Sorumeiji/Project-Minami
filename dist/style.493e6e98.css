@@ -1,0 +1,158 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+html,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol {
+  list-style: none;
+}
+
+html{
+    font-size: 16px;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  background: url(/daimond_overlay.faa925f4.png) repeat;
+  background-position: 0% 90%;
+  background-color: #2b2b2b;
+  color: #FDF3F0;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+a{
+    font-family: 'Open Sans', sans-serif;
+    text-decoration:none;
+    color: #FDF3F0;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.fab {  font-style: normal;}
+
+.orange-bar{
+    width: 100%;
+    border: 1px solid #FF754F;
+}
+
+nav ul li a{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3em;
+    margin: auto 0;
+}
+.nav__navlist{
+    display: flex;
+   
+}
+.nav ul li + li {
+    margin-left: 2em;
+}
+
+.nav__burger {
+    display: none;
+}
+
+.nav__burger div{  
+    width: 25px;
+    height: 2px;
+    background-color: #FDF3F0;
+    margin: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 768px) {   
+    body{
+        overflow-x: hidden;
+    }
+    .logo{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav{
+        position: absolute;
+        right: 0;
+        height: 100%;
+        top: 0;
+        background-color: #2b2b2b;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        transform: translateX(0%);
+    }
+    .nav__navlist{
+        margin-top: 5em;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .nav ul li + li {
+        margin-left: 0em;
+        margin-top: 1em;
+    }
+}
+
+
+
+
+
+/*# sourceMappingURL=/style.493e6e98.css.map */

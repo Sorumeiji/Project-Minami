@@ -1,0 +1,22 @@
+{
+  "name": "30thbirthday",
+  "version": "1.0.0",
+  "description": "Birhday Countdown Timer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sorumeiji/30thBirthday.git"
+  },
+  "author": "Sourumeiji",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sorumeiji/30thBirthday/issues"
+  },
+  "homepage": "https://github.com/Sorumeiji/30thBirthday#readme",
+  "dependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}
