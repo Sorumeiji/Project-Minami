@@ -1,5 +1,4 @@
 const timeLeft = document.getElementById('timeLeft');
-
 const birthday = new Date('08/05/2021');
 const second = 1000;
 const minute = second * 60;
@@ -22,14 +21,43 @@ function countDown() {
         clearInterval(timerId);
         return;
     }
-
     const days = Math.floor(timeSpan / day);
     const hours = Math.floor((timeSpan % day) / hour );
     const minutes = Math.floor((timeSpan % hour) / minute );
     const seconds =  Math.floor((timeSpan % minute) / second );
-
     timeLeft.innerHTML = days + ' ' + hours + ' ' + minutes + ' ' + seconds + '';
 }
 
+const navSlide = () => {
+    const burger = document.querySelector('.nav__burger');
+    const nav = document.querySelector('.nav__navlist');
+    const logo = document.querySelector('.logo');
+    const navLinks = document.querySelectorAll('.nav__navlist li + li');
+    const container = document.querySelector('.container');
+    
 
-timerId = setInterval(countDown,second);
+    burger.addEventListener('click',()=>{
+        nav.classList.toggle('nav-active');
+        logo.classList.toggle('logo-hidden');
+        burger.classList.toggle('toggle');
+          
+        navLinks.forEach( (link, index)=> {
+
+            if(link.style.animation){
+                link.style.animation = `nav__navlistFadeOut 0.5s ease backwards ${index / 5 + 0.1}s`
+                 link.style.animation = '';
+            } else {
+              link.style.animation = `nav__navlistFade 0.5s ease forwards ${index / 5 + 0.1}s`;
+            }
+        });
+
+    });
+        
+};
+
+const app = () => {
+    navSlide();
+    timerId = setInterval(countDown,second);
+};
+
+app();

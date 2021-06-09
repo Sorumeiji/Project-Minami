@@ -21,14 +21,26 @@ dd {
   padding: 0;
 }
 
+
+::selection {
+    background-color:#101820FF ;
+    color:#F95700FF;
+  }
+
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul,
-ol {
+ul[role='list'],
+ol[role='list']  {
   list-style: none;
+}
+
+ul{
+    padding-left: 0;
 }
 
 html{
     font-size: 16px;
+    min-height: 100%;
+    scroll: smooth;
 }
 
 /* Set core root defaults */
@@ -40,8 +52,9 @@ html:focus-within {
 body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  min-height: 100%;
   background: url(/daimond_overlay.faa925f4.png) repeat;
-  background-position: 0% 90%;
+  background-position: 0% 87%;
   background-color: #2b2b2b;
   color: #FDF3F0;
 }
@@ -55,7 +68,9 @@ a{
     font-family: 'Open Sans', sans-serif;
     text-decoration:none;
     color: #FDF3F0;
+    transition: ease-in 0.3s;
 }
+
 
 /* Make images easier to work with */
 img,
@@ -100,56 +115,292 @@ nav ul li a{
     margin-left: 2em;
 }
 
-.nav__burger {
+.nav__burger, .nav__navlist-logo {
     display: none;
 }
+
 
 .nav__burger div{  
     width: 25px;
     height: 2px;
     background-color: #FDF3F0;
     margin: 5px;
+    transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 1024px) {
+.header{  
+    display: flex;
+    flex-direction: column;
+}
 
+.header__banner {
+    padding: 12em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url(/illustartionBanner.f8389776.png) no-repeat center center;
+    background-color: #313030ab;
+    background-size: auto;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.header__title {
+    border-left: 0.3em solid #FF754F;
+    line-height: 0.75em;
+    padding-left: 0.2em;
+    font-size: 1.25rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.header__countdown h1{
+    font-size: 7.451rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #FF754F;
+}
+
+.header__countdown-labels{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex;
+    justify-content:space-around;
+    margin: auto 0em;
+    padding-bottom: 2em;
+}
+
+.header__buttons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header__buttons a{
+    justify-content: space-evenly;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 0.8rem;
+    margin-left: 2em;
+    border: 1px solid #FF754F;
+    padding: 0.9em 1em;
+    color: #FDF3F0;
+    border-radius: 0.1em;
+}
+
+.header__buttons a:hover{ 
+    background-color: #ff754f6b;
+}
+
+
+.FAQ{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10em 0;
+}
+
+.FAQ__title{
+    font-size:3.815rem;
+}
+.FAQ__item {
+    padding: 1.5em 0.2em;
+}
+
+.FAQ__item-subheading{
+    text-transform: uppercase;
+    padding: 1em 0;
+    font-size: 1.563rem;
+}
+.FAQ__item-text{
+    padding: 1em 0.2em;
+    margin: 0 auto;
+    font-size: 1.25rem;
+    display: block;
+    max-width: 50%;
+    line-height: 2;
+}
+
+.amazonLink{
+    color:#FDF3F0;
+    transition: ease-in 0.3s;
+    border-bottom: 0.5px solid #FF754F;
+    
+}
+.amazonLink:hover{
+    color: #FF754F;
+    transition: transform 0.3s ease-out;
+   
+}
+
+.nav__navlist a{
+    color: #FDF3F0;
+    transition: ease-in 0.2s;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.25rem;
+}
+
+.nav__navlist a:hover{
+    color: #FF754F;
+}
+
+
+.logo{
+    width: 200px
+}
+
+.footer{
+    padding: 2em 2em;
+    display:flex;
+    background-color: #2b2b2b;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
 }
 
 @media screen and (max-width: 768px) {   
     body{
         overflow-x: hidden;
     }
-    .logo{
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+
+    .nav{  
+         justify-content: space-between;
+         /* position: relative; */
     }
-    .nav{
+
+    .nav ul{  
+        margin-top: 0em }
+
+    .nav ul li + li {
+        margin-left: 0em;
+        margin-top: 1em;
+        text-align: right;
+    }
+    .nav__navlist{
         position: absolute;
         right: 0;
         height: 100%;
-        top: 0;
+        top: 10%;
+        bottom: 0;
         background-color: #2b2b2b;
         width: 50%;
         display: flex;
         flex-direction: column;
         justify-content: start;
         align-items: center;
-        transform: translateX(0%);
-    }
-    .nav__navlist{
-        margin-top: 5em;
-        display: flex;
-        flex-direction: column;
+        transform: translateX(100%);
         padding: 0;
+        margin-top: 0;
+        transition: transform 0.5s ease-in;
     }
-    .nav ul li + li {
-        margin-left: 0em;
-        margin-top: 1em;
+
+    .nav__navlist li:first-child{
+        margin-bottom: 2.5em;
+        margin-top: 2.5em;
+    }
+
+    .nav__navlist-logo{
+        display: block;
+    }
+
+    .nav__burger:hover{
+        cursor: pointer;
+    }
+
+    .logo-hidden{
+        visibility: hidden;
+    }
+
+    .nav-active{
+        transform: translateX(0%);
+        transition: 0.5s ease-out;
+    }
+
+@keyframes nav__navlistFade{
+        from{
+            opacity: 0;
+            transform: translateX(50px); 
+        }
+        to{
+        opacity: 1;
+        transform: translateX(0px);
+        }
+}
+
+
+@keyframes nav__navlistFadeOut{
+    from{
+        opacity: 1;
+        transform: translateX(0px); 
+    }
+    to{
+    opacity: 0;
+    transform: translateX(50px);
     }
 }
+
+.toggle .nav__burger-line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .nav__burger-line2{
+    opacity: 0;
+}
+.toggle .nav__burger-line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+    .nav__burger{
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 688px) { 
+    .nav__navlist a{
+        font-size: 1rem;
+    }
+
+    .header__title{
+        font-size: 1rem;
+    }
+
+    .header__countdown h1{
+        font-size:4.768rem;
+    }
+
+    .header__buttons a{
+        font-size: 0.64rem;
+        padding: 1.2em 1em;
+    }
+
+    .FAQ__item-text{
+        font-size: 1rem;
+        max-width: 70%;
+    }
+
+    .FAQ__title{
+        font-size: 3.052rem;
+    }
+
+    .FAQ__item-subheading {
+      font-size: 1.25rem;
+    }
+
+    .footer{
+        font-size: 0.8rem;
+    }
+}
+
+
+
+
 
 
 

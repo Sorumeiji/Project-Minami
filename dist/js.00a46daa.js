@@ -148,7 +148,33 @@ function countDown() {
   timeLeft.innerHTML = days + ' ' + hours + ' ' + minutes + ' ' + seconds + '';
 }
 
-timerId = setInterval(countDown, second);
+var navSlide = function navSlide() {
+  var burger = document.querySelector('.nav__burger');
+  var nav = document.querySelector('.nav__navlist');
+  var logo = document.querySelector('.logo');
+  var navLinks = document.querySelectorAll('.nav__navlist li + li');
+  var container = document.querySelector('.container');
+  burger.addEventListener('click', function () {
+    nav.classList.toggle('nav-active');
+    logo.classList.toggle('logo-hidden');
+    burger.classList.toggle('toggle');
+    navLinks.forEach(function (link, index) {
+      if (link.style.animation) {
+        link.style.animation = "nav__navlistFadeOut 0.5s ease backwards ".concat(index / 5 + 0.1, "s");
+        link.style.animation = '';
+      } else {
+        link.style.animation = "nav__navlistFade 0.5s ease forwards ".concat(index / 5 + 0.1, "s");
+      }
+    });
+  });
+};
+
+var app = function app() {
+  navSlide();
+  timerId = setInterval(countDown, second);
+};
+
+app();
 },{}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -177,7 +203,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61250" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64512" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
