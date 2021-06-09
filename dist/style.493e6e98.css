@@ -308,6 +308,7 @@ nav ul li a{
 
     .nav__navlist-logo{
         display: block;
+        width: 150px;
     }
 
     .nav__burger:hover{
