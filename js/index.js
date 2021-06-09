@@ -28,35 +28,7 @@ function countDown() {
     timeLeft.innerHTML = days + ' ' + hours + ' ' + minutes + ' ' + seconds + '';
 }
 
-const navSlide = () => {
-    const burger = document.querySelector('.nav__burger');
-    const nav = document.querySelector('.nav__navlist');
-    const logo = document.querySelector('.logo');
-    const navLinks = document.querySelectorAll('.nav__navlist li + li');
-    const container = document.querySelector('.container');
-    
-
-    burger.addEventListener('click',()=>{
-        nav.classList.toggle('nav-active');
-        logo.classList.toggle('logo-hidden');
-        burger.classList.toggle('toggle');
-          
-        navLinks.forEach( (link, index)=> {
-
-            if(link.style.animation){
-                link.style.animation = `nav__navlistFadeOut 0.5s ease backwards ${index / 5 + 0.1}s`
-                 link.style.animation = '';
-            } else {
-              link.style.animation = `nav__navlistFade 0.5s ease forwards ${index / 5 + 0.1}s`;
-            }
-        });
-
-    });
-        
-};
-
 const app = () => {
-    navSlide();
     timerId = setInterval(countDown,second);
 };
 

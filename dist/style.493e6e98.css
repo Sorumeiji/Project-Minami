@@ -92,7 +92,7 @@ select {
 
 .orange-bar{
     width: 100%;
-    border: 1px solid #FF754F;
+    border-top: 1px solid #FF754F;
 }
 
 nav ul li a{
@@ -112,7 +112,7 @@ nav ul li a{
    
 }
 .nav ul li + li {
-    margin-left: 2em;
+    margin-left: 1em;
 }
 
 .nav__burger, .nav__navlist-logo {
@@ -243,7 +243,7 @@ nav ul li a{
     color: #FDF3F0;
     transition: ease-in 0.2s;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.25rem;
+    font-size: 1.563rem;
 }
 
 .nav__navlist a:hover{
@@ -259,7 +259,7 @@ nav ul li a{
     padding: 2em 2em;
     display:flex;
     background-color: #2b2b2b;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
@@ -273,42 +273,6 @@ nav ul li a{
     .nav{  
          justify-content: space-between;
          /* position: relative; */
-    }
-
-    .nav ul{  
-        margin-top: 0em }
-
-    .nav ul li + li {
-        margin-left: 0em;
-        margin-top: 1em;
-        text-align: right;
-    }
-    .nav__navlist{
-        position: absolute;
-        right: 0;
-        height: 100%;
-        top: 10%;
-        bottom: 0;
-        background-color: #2b2b2b;
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: center;
-        transform: translateX(100%);
-        padding: 0;
-        margin-top: 0;
-        transition: transform 0.5s ease-in;
-    }
-
-    .nav__navlist li:first-child{
-        margin-bottom: 2.5em;
-        margin-top: 2.5em;
-    }
-
-    .nav__navlist-logo{
-        display: block;
-        width: 150px;
     }
 
     .nav__burger:hover{
@@ -369,7 +333,7 @@ nav ul li a{
 
 @media screen and (max-width: 688px) { 
     .nav__navlist a{
-        font-size: 1rem;
+        font-size: 1.563rem;
     }
 
     .header__title{
