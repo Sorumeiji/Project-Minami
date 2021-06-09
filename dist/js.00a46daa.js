@@ -126,6 +126,14 @@ var hour = minute * 60;
 var day = hour * 24;
 var timerId = birthday;
 
+function pad(n) {
+  if (n < 10) {
+    return "0" + n;
+  }
+
+  return n;
+}
+
 function countDown() {
   var today = new Date();
   var timeSpan = birthday - today;
@@ -141,14 +149,18 @@ function countDown() {
     return;
   }
 
-  var days = Math.floor(timeSpan / day);
-  var hours = Math.floor(timeSpan % day / hour);
-  var minutes = Math.floor(timeSpan % hour / minute);
-  var seconds = Math.floor(timeSpan % minute / second);
+  var days = pad(Math.floor(timeSpan / day));
+  var hours = pad(Math.floor(timeSpan % day / hour));
+  var minutes = pad(Math.floor(timeSpan % hour / minute));
+  var seconds = pad(Math.floor(timeSpan % minute / second));
   timeLeft.innerHTML = days + ' ' + hours + ' ' + minutes + ' ' + seconds + '';
 }
 
 var app = function app() {
+  window.addEventListener('load', function () {
+    var preload = document.querySelector('.preload');
+    preload.classList.add('preload-finish');
+  });
   timerId = setInterval(countDown, second);
 };
 
@@ -181,7 +193,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59628" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51966" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -6,6 +6,17 @@ const hour = minute * 60;
 const day = hour * 24;
 let timerId = birthday;
 
+
+
+
+function pad(n){
+    if(n < 10 )
+    {
+        return "0" + n;
+    }
+    return n;
+}
+
 function countDown() { 
     const today = new Date();
     const timeSpan = birthday - today;
@@ -21,15 +32,25 @@ function countDown() {
         clearInterval(timerId);
         return;
     }
-    const days = Math.floor(timeSpan / day);
-    const hours = Math.floor((timeSpan % day) / hour );
-    const minutes = Math.floor((timeSpan % hour) / minute );
-    const seconds =  Math.floor((timeSpan % minute) / second );
+    let days = pad( Math.floor(timeSpan / day) );
+    let hours = pad ( Math.floor((timeSpan % day) / hour) );
+    let minutes = pad ( Math.floor((timeSpan % hour) / minute));
+    let seconds =  pad (Math.floor((timeSpan % minute) / second ));
+
+
     timeLeft.innerHTML = days + ' ' + hours + ' ' + minutes + ' ' + seconds + '';
 }
 
 const app = () => {
+
+    window.addEventListener('load', () => {
+        const preload = document.querySelector('.preload');
+        preload.classList.add('preload-finish');
+    });
+
+
     timerId = setInterval(countDown,second);
+
 };
 
 app();
