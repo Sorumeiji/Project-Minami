@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"C:\\Users\\kaleb\\Documents\\Github\\30thBirthday\\img\\daimond_overlay.png":[["daimond_overlay.faa925f4.png","img/daimond_overlay.png"],"img/daimond_overlay.png"],"C:\\Users\\kaleb\\Documents\\Github\\30thBirthday\\img\\illustartionBanner.png":[["illustartionBanner.f8389776.png","img/illustartionBanner.png"],"img/illustartionBanner.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"C:\\Users\\kaleb\\Documents\\Github\\30thBirthday\\img\\daimond_overlay_test.png":[["daimond_overlay_test.e246cbc0.png","img/daimond_overlay_test.png"],"img/daimond_overlay_test.png"],"C:\\Users\\kaleb\\Documents\\Github\\30thBirthday\\img\\illustartionBanner.png":[["illustartionBanner.f8389776.png","img/illustartionBanner.png"],"img/illustartionBanner.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51966" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50953" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
