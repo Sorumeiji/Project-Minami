@@ -234,9 +234,9 @@ nav ul li a{
 .header__disclaimer p {
     display: flex;
     flex-direction: column;
-    text-transform: capitalize;
+    text-transform: initial;
     margin: 0 auto;
-    font-size:0.64rem;
+    font-size: 0.75rem;
     padding: 1em 1em;
     font-family: 'Open Sans', sans-serif;
 }
@@ -247,7 +247,7 @@ nav ul li a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1.2em 1em;
+    padding: 1.2em 0.5em;
 }
 
 .header__button-item a {
