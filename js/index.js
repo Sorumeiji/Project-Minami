@@ -9,33 +9,31 @@ let timerId = birthday;
 
 
 
-function pad(n){
-    if(n < 10 )
-    {
+function pad(n) {
+    if (n < 10) {
         return "0" + n;
     }
     return n;
 }
 
-function countDown() { 
+function countDown() {
     const today = new Date();
     const timeSpan = birthday - today;
     console.log(timeSpan);
 
-    if(timeSpan <= -day){
+    if (timeSpan <= -day) {
         timeLeft.innerHTML = "Hope your Birthday was the best!";
         clearInterval(timerId);
         return;
-    }
-    else if(timeSpan <= 0 ) {
+    } else if (timeSpan <= 0) {
         timeLeft.innerHTML = "Happy Birthday Nyacchii";
         clearInterval(timerId);
         return;
     }
-    let days = pad( Math.floor(timeSpan / day) );
-    let hours = pad ( Math.floor((timeSpan % day) / hour) );
-    let minutes = pad ( Math.floor((timeSpan % hour) / minute));
-    let seconds =  pad (Math.floor((timeSpan % minute) / second ));
+    let days = pad(Math.floor(timeSpan / day));
+    let hours = pad(Math.floor((timeSpan % day) / hour));
+    let minutes = pad(Math.floor((timeSpan % hour) / minute));
+    let seconds = pad(Math.floor((timeSpan % minute) / second));
 
 
     timeLeft.innerHTML = days + ' ' + hours + ' ' + minutes + ' ' + seconds + '';
@@ -49,7 +47,7 @@ const app = () => {
     });
 
 
-    timerId = setInterval(countDown,second);
+    timerId = setInterval(countDown, second);
 
 };
 
