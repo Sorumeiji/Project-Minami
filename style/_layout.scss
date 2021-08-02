@@ -1,0 +1,47 @@
+.orange-bar {
+    border-bottom: 1px solid hsl(13, 100%, 65%);
+}
+
+.container {
+    max-width: 300px;
+}
+
+.header {
+    padding: 5em 0;
+    background: url(../img/01.png) no-repeat;
+    background-color: #2b2b2b;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto 0;
+}
+
+.header__content img {
+    max-width: 100%;
+}
+
+.header__content p {
+    padding: 2em 0;
+}
+
+@mixin layout--400() {
+}
+
+@mixin layout--700() {
+}
+
+@mixin layout--1200() {
+}

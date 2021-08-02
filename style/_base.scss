@@ -1,3 +1,13 @@
+:root {
+    --clr-light: hsl(14, 76%, 97%);
+    --clr-accent: hsl(13, 100%, 65%);
+    --clr-primary: hsl(0, 0%, 15%);
+
+    --font-primary: "Open Sans", sans-serif;
+    --font-light: 300;
+    --font-bold: 600;
+}
+
 /* Box sizing rules */
 
 *,
@@ -5,7 +15,6 @@
 *::after {
     box-sizing: border-box;
 }
-
 
 /* Remove default margin */
 
@@ -25,15 +34,14 @@ dd {
 }
 
 ::selection {
-    background-color: #101820FF;
-    color: #F95700FF;
+    background-color: #101820ff;
+    color: rgb(249, 87, 0);
 }
-
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 
-ul[role='list'],
-ol[role='list'] {
+ul[role="list"],
+ol[role="list"] {
     list-style: none;
 }
 
@@ -47,13 +55,11 @@ html {
     scroll-behavior: smooth;
 }
 
-
 /* Set core root defaults */
 
 html:focus-within {
     scroll-behavior: smooth;
 }
-
 
 /* Set core body defaults */
 
@@ -63,9 +69,8 @@ body {
     min-height: 100%;
     // background: url(/img/daimond_overlay_test.png);
     background-color: #262626;
-    color: #FDF3F0;
+    color: #fdf3f0;
 }
-
 
 /* A elements that don't have a class get default styles */
 
@@ -74,12 +79,11 @@ a:not([class]) {
 }
 
 a {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     text-decoration: none;
-    color: #FDF3F0;
+    color: #fdf3f0;
     transition: ease-in 0.3s;
 }
-
 
 /* Make images easier to work with */
 
@@ -89,7 +93,6 @@ svg {
     max-width: 100%;
     display: block;
 }
-
 
 /* Inherit fonts for inputs and buttons */
 
