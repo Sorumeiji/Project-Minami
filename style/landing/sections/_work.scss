@@ -26,9 +26,10 @@
 
 .works__gallery {
     display: flex;
+    padding: 2em;
     flex-direction: column;
     align-items: center;
-    // background-color: hsl(0, 0%, 17%);
+    background-color: hsl(0, 0%, 17%);
     background-position: center right;
     border-radius: 10px;
 }
@@ -65,18 +66,18 @@
         background: url(/img/minami_showcase.png) no-repeat;
         background-color: hsl(0, 0%, 17%);
         background-position: top 0% left 200px;
-        background-size: 90%;
+        background-size: 60%;
         border-radius: 10px;
         transition: 0.5s ease-in-out;
     }
-    .works__gallery:hover {
-        background: url(/img/minami_showcase_hover.png) no-repeat;
-        background-color: hsl(0, 0%, 17%);
-        background-position: top 0% left 200px;
-        background-size: 90%;
-        border-radius: 10px;
-        transition: 0.5s ease-in-out;
-    }
+    // .works__gallery:hover {
+    //     background: url(/img/minami_showcase_hover.png) no-repeat;
+    //     background-color: hsl(0, 0%, 17%);
+    //     background-position: top 0% left 200px;
+    //     background-size: 60%;
+    //     border-radius: 10px;
+    //     transition: 0.5s ease-in-out;
+    // }
 
     .works__items {
         display: flex;
@@ -104,19 +105,19 @@
         align-items: flex-start;
         background: url(/img/minami_showcase.png) no-repeat;
         background-color: hsl(0, 0%, 17%);
-        background-position: top 0% left 200px;
-        background-size: 90%;
+        background-position: top 0% left 500px;
+        background-size: 50%;
         border-radius: 10px;
         transition: 0.5s ease-in-out;
     }
-    .works__gallery:hover {
-        background: url(/img/minami_showcase_hover.png) no-repeat;
-        background-color: hsl(0, 0%, 17%);
-        background-position: top 0% left 200px;
-        background-size: 90%;
-        border-radius: 10px;
-        transition: 0.5s ease-in-out;
-    }
+    // .works__gallery:hover {
+    //     background: url(/img/minami_showcase_hover.png) no-repeat;
+    //     background-color: hsl(0, 0%, 17%);
+    //     background-position: top 0% left 500px;
+    //     background-size: 50%;
+    //     border-radius: 10px;
+    //     transition: 0.5s ease-in-out;
+    // }
 
     .works__items {
         display: flex;

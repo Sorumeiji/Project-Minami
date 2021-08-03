@@ -1,17 +1,21 @@
 @import "sections/service";
 @import "sections/work";
+@import "sections/process";
 
 @mixin landing--400() {
     @include service--400();
     @include works--400();
+    @include process--400();
 }
 
 @mixin landing--700() {
     @include service--700();
     @include works--700();
+    @include process--700();
 }
 
 @mixin landing--1080() {
     @include service--1080();
     @include works--1080();
+    @include process--1080();
 }

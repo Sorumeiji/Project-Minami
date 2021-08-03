@@ -1,0 +1,112 @@
+.process {
+    display: flex;
+    padding: 5em 0;
+    justify-content: center;
+}
+
+.process h1 {
+    font-family: var(--font-primary);
+    font-weight: var(--font-bold);
+    border-left: 1px solid #ff754f;
+    line-height: 0.75em;
+    font-size: 1.44rem;
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+
+.process p {
+    font-size: 0.694rem;
+    font-family: var(--font-primary);
+    font-weight: var(--font-light);
+    padding: 2em 0;
+    line-height: 2;
+    max-width: 70%;
+}
+
+.process__content {
+    padding: 3em;
+    background: url(/img/aris_process.png) no-repeat;
+    background-color: hsl(0, 0%, 17%);
+    background-size: 100%;
+    background-position: center center;
+    border-radius: 10px;
+    max-width: 100%;
+    align-items: center;
+}
+
+.process__items {
+}
+
+.process__content-item {
+}
+
+.process__content-item h2 {
+    font-family: var(--font-primary);
+    font-weight: var(--font-light);
+    line-height: 0.75em;
+    font-size: 1.2rem;
+}
+
+.process__content-item p {
+    padding: 3em 0;
+    max-width: 80%;
+    font-family: var(--font-primary);
+    font-weight: var(--font-light);
+    line-height: 2;
+    font-size: 0.694rem;
+}
+
+@mixin process--400() {
+}
+
+@mixin process--700() {
+    .process h1 {
+        font-size: 2.488rem;
+    }
+
+    .process p {
+        font-size: 1rem;
+        width: 60%;
+    }
+
+    .process__content-item h2 {
+        font-size: 1.728rem;
+    }
+
+    .process__content-item p {
+        max-width: 60%;
+        font-size: 1rem;
+    }
+}
+
+@mixin process--1080() {
+    .process h1 {
+        font-size: 2.986rem;
+    }
+
+    .process p {
+        font-size: 1.2rem;
+        max-width: 50%;
+    }
+
+    .process__items {
+        display: flex;
+    }
+
+    .process__content-item h2 {
+        font-size: 1.728rem;
+    }
+
+    .process__content-item p {
+        max-width: 80%;
+        font-size: 0.833rem;
+    }
+
+    .process__content {
+        padding: 3em;
+        background: url(/img/aris_process_2.png) no-repeat;
+        background-color: hsl(0, 0%, 17%);
+        background-size: 50%;
+        background-position: center right;
+    }
+}
