@@ -1,10 +1,3 @@
-// const navToggle =
-//     document.querySelector('.nav__toggle');
-
-// navToggle.addEventListener('click', () => {
-//     document.body.classList.toggle('nav-open');
-// });
-
 const navSlide = () => {
     const hamburger = document.querySelector('.hamburger');
     const nav = document.querySelector('.nav__navlist');

@@ -1,11 +1,14 @@
 @media screen and (min-width: 400px) {
-    @include nav--400();
 }
 
 @media screen and (min-width: 700px) {
     @include nav--700();
+    @include layout--700();
+    @include landing--700();
 }
 
 @media screen and (min-width: 1080px) {
     @include nav--1080();
+    @include layout--1080();
+    @include landing--1080();
 }
