@@ -11,6 +11,7 @@
     padding-left: 10px;
     line-height: 0.75em;
     font-size: 1.44rem;
+    text-transform: uppercase;
 }
 
 .service__description {
@@ -31,7 +32,7 @@
 .card-item {
     padding: 3em 2em;
     background-color: hsl(0, 0%, 17%);
-    margin: 2em 0;
+    margin: 1em 0;
     border-radius: 10px;
 }
 
@@ -74,7 +75,7 @@
     background: url(/img/minami_hover.png) no-repeat;
     background-position: center right;
     background-color: hsl(0, 0%, 17%);
-    transition: 0.5s ease;
+    transition: 0.5s ease-in;
 }
 
 .card-item h1 {
@@ -88,17 +89,17 @@
 
 .card-item p {
     padding: 3em 0;
-    max-width: 100%;
+    max-width: 80%;
     font-family: var(--font-primary);
     font-weight: var(--font-light);
     line-height: 2;
     font-size: 0.694rem;
 }
 
-@mixin landing--400() {
+@mixin service--400() {
 }
 
-@mixin landing--700() {
+@mixin service--700() {
     .service__description {
         font-size: 0.833rem;
         width: 60%;
@@ -109,11 +110,12 @@
     }
 
     .card-item {
-        padding: 3em 2em;
+        padding: 3em auto;
         background-color: hsl(0, 0%, 17%);
-        margin: 3em 0;
+        margin: 1em 0;
         border-radius: 10px;
-        max-width: 60%;
+        max-width: 100%;
+        align-items: center;
     }
 
     .card-item h1 {
@@ -121,12 +123,12 @@
     }
 
     .card-item p {
-        max-width: 70%;
+        max-width: 50%;
         font-size: 1rem;
     }
 }
 
-@mixin landing--1080() {
+@mixin service--1080() {
     .service__description {
         font-size: 1.2rem;
         max-width: 50%;
@@ -157,6 +159,6 @@
 
     .card-item p {
         max-width: 90%;
-        font-size: 1rem;
+        font-size: 0.833rem;
     }
 }
