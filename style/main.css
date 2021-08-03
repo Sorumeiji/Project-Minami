@@ -11,7 +11,8 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -30,6 +31,11 @@ dl,
 dd {
   margin: 0;
   padding: 0;
+}
+
+::-moz-selection {
+  background-color: #101820ff;
+  color: #f95700;
 }
 
 ::selection {
@@ -75,13 +81,15 @@ body {
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
-  text-decoration-skip-ink: auto;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
 }
 
 a {
   font-family: "Open Sans", sans-serif;
   text-decoration: none;
   color: #fdf3f0;
+  -webkit-transition: ease-in 0.3s;
   transition: ease-in 0.3s;
 }
 
@@ -121,9 +129,14 @@ body {
 
 .nav {
   background: url(../img/daimond_overlay_test.png);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 2em 0;
   display: none;
 }
@@ -140,11 +153,22 @@ body {
   top: 7.5%;
   padding-top: 2em;
   background-color: var(--clr-primary);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  transform: translate(100%);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translate(100%);
+          transform: translate(100%);
+  -webkit-transition: -webkit-transform 0.5s ease-in;
+  transition: -webkit-transform 0.5s ease-in;
   transition: transform 0.5s ease-in;
+  transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
 }
 
 .nav__navlist li {
@@ -180,17 +204,33 @@ body {
 }
 
 .nav-active {
-  transform: translate(0%);
+  -webkit-transform: translate(0%);
+          transform: translate(0%);
+}
+
+@-webkit-keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: traslatex(50px);
+            transform: traslatex(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: traslatex(0px);
+            transform: traslatex(0px);
+  }
 }
 
 @keyframes navLinkFade {
   from {
     opacity: 0;
-    transform: traslatex(50px);
+    -webkit-transform: traslatex(50px);
+            transform: traslatex(50px);
   }
   to {
     opacity: 1;
-    transform: traslatex(0px);
+    -webkit-transform: traslatex(0px);
+            transform: traslatex(0px);
   }
 }
 .orange-bar {
@@ -205,9 +245,13 @@ body {
 }
 
 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 10em 0;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background: url(../img/01.png) no-repeat;
   background-color: #2b2b2b;
   background-size: cover;
@@ -224,9 +268,13 @@ body {
 }
 
 .service {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 5em 0;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .service__title {
@@ -249,8 +297,13 @@ body {
 }
 
 .service__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   max-width: 100%;
 }
 
@@ -265,6 +318,7 @@ body {
   background: url(/img/aris.png) no-repeat;
   background-color: #2b2b2b;
   background-position: center right;
+  -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
 }
 
@@ -272,6 +326,7 @@ body {
   background: url(/img/aris_hover.png) no-repeat;
   background-position: center right;
   background-color: #2b2b2b;
+  -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
 
@@ -279,6 +334,7 @@ body {
   background: url(/img/minty.png) no-repeat;
   background-color: #2b2b2b;
   background-position: center right;
+  -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
 }
 
@@ -286,6 +342,7 @@ body {
   background: url(/img/minty_hover.png) no-repeat;
   background-position: center right;
   background-color: #2b2b2b;
+  -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
 
@@ -293,6 +350,7 @@ body {
   background: url(/img/minami.png) no-repeat;
   background-color: #2b2b2b;
   background-position: center right;
+  -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
 }
 
@@ -300,6 +358,7 @@ body {
   background: url(/img/minami_hover.png) no-repeat;
   background-position: center right;
   background-color: #2b2b2b;
+  -webkit-transition: 0.5s ease-in;
   transition: 0.5s ease-in;
 }
 
@@ -345,9 +404,16 @@ body {
 }
 
 .works__gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-position: center right;
   border-radius: 10px;
 }
@@ -357,7 +423,8 @@ body {
 }
 
 .works-item img {
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
 }
 
 @media screen and (min-width: 700px) {
@@ -366,8 +433,12 @@ body {
     height: auto;
     width: auto;
     padding-top: 0;
-    flex-direction: row;
-    transform: none;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-transform: none;
+            transform: none;
   }
 
   .nav__navlist li {
@@ -403,7 +474,9 @@ body {
     margin: 1em 0;
     border-radius: 10px;
     max-width: 100%;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .card-item h1 {
@@ -425,14 +498,21 @@ body {
   }
 
   .works__gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     background: url(/img/minami_showcase.png) no-repeat;
     background-color: #2b2b2b;
     background-position: top 0% left 200px;
     background-size: 90%;
     border-radius: 10px;
+    -webkit-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
   }
 
@@ -442,10 +522,13 @@ body {
     background-position: top 0% left 200px;
     background-size: 90%;
     border-radius: 10px;
+    -webkit-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
   }
 
   .works__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 0 0.5em;
     padding: 0.1em 0.5em;
@@ -471,7 +554,10 @@ body {
   }
 
   .service__cards {
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 
   .card-item {
@@ -504,14 +590,22 @@ body {
   }
 
   .works__gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     background: url(/img/minami_showcase.png) no-repeat;
     background-color: #2b2b2b;
     background-position: top 0% left 200px;
     background-size: 90%;
     border-radius: 10px;
+    -webkit-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
   }
 
@@ -521,10 +615,13 @@ body {
     background-position: top 0% left 200px;
     background-size: 90%;
     border-radius: 10px;
+    -webkit-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
   }
 
   .works__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 0 0.5em;
   }
