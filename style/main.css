@@ -525,6 +525,66 @@ body {
   color: var(--clr-accent);
 }
 
+.footer {
+  background: #fdf3f0;
+  color: #2b2b2b;
+  padding: 4em 0;
+}
+
+.footer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-family: var(--font-primary);
+  font-weight: var(--font-light);
+  font-size: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__content img {
+  width: 150px;
+  height: 150px;
+}
+
+.footer__content h3 {
+  font-size: 0.833rem;
+  font-family: var(--font-primary);
+  font-weight: var(--font-light);
+}
+
+.footer__list {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.footer__list li {
+  list-style-type: none;
+  margin-left: 1em;
+  font-weight: var(--font-light);
+}
+
+.footer__list li a {
+  font-family: var(--font-primary);
+  font-weight: var(--font-light);
+  color: #2b2b2b;
+}
+
+.footer__list li a:hover {
+  color: var(--clr-accent);
+}
+
 @media screen and (min-width: 700px) {
   .nav__navlist {
     position: relative;
@@ -774,5 +834,27 @@ body {
   .contact__content p {
     max-width: 50%;
     font-size: 1.2rem;
+  }
+
+  .footer__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+
+  .footer__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
