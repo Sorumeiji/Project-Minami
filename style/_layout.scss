@@ -18,6 +18,13 @@
     background-size: cover;
 }
 
+.header__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .header img {
     width: 70%;
 }
@@ -25,7 +32,9 @@
 .header p {
     padding: 2em 0;
     line-height: 2;
+    text-align: center;
     font-family: var(--font-primary);
+    max-width: 90%;
 }
 
 @mixin layout--400() {
@@ -34,13 +43,13 @@
 @mixin layout--700() {
     .header p {
         font-size: 1.2rem;
-        max-width: 60%;
+        max-width: 70%;
     }
 }
 
 @mixin layout--1080() {
     .header p {
-        font-size: 1.44rem;
-        max-width: 50%;
+        font-size: 1.2rem;
+        max-width: 60%;
     }
 }

@@ -80,6 +80,10 @@ body {
   color: #fdf3f0;
 }
 
+.text-shadow {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+}
+
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   -webkit-text-decoration-skip: ink;
@@ -258,6 +262,22 @@ body {
   background-size: cover;
 }
 
+.header__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .header img {
   width: 70%;
 }
@@ -265,7 +285,9 @@ body {
 .header p {
   padding: 2em 0;
   line-height: 2;
+  text-align: center;
   font-family: var(--font-primary);
+  max-width: 90%;
 }
 
 .service {
@@ -614,7 +636,7 @@ body {
 
   .header p {
     font-size: 1.2rem;
-    max-width: 60%;
+    max-width: 70%;
   }
 
   .service__description {
@@ -715,8 +737,8 @@ body {
 }
 @media screen and (min-width: 1080px) {
   .header p {
-    font-size: 1.44rem;
-    max-width: 50%;
+    font-size: 1.2rem;
+    max-width: 60%;
   }
 
   .service__description {
