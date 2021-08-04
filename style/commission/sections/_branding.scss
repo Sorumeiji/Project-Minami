@@ -1,0 +1,147 @@
+.branding {
+    padding: 5em 0;
+}
+
+.branding h1 {
+    font-family: var(--font-primary);
+    font-weight: var(--font-bold);
+    border-left: 1px solid #ff754f;
+    padding-left: 10px;
+    line-height: 0.75em;
+    font-size: 1.44rem;
+    text-transform: uppercase;
+}
+
+.branding p {
+    font-size: 0.833rem;
+    font-family: var(--font-primary);
+    font-weight: var(--font-light);
+    padding: 2em 0;
+    line-height: 2;
+    max-width: 90%;
+}
+
+.branding__content {
+    display: flex;
+    justify-content: center;
+    padding: 3em;
+    background: url(/img/aris_process.png) no-repeat;
+    background-color: hsl(0, 0%, 17%);
+    background-size: 100%;
+    background-position: center center;
+    border-radius: 10px;
+}
+
+.branding__info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.branding__pricing-item {
+    padding: 1em;
+}
+
+.branding__pricing-item h2 {
+    font-size: 1.2rem;
+    padding-bottom: 1em;
+    font-family: var(--font-primary);
+    font-weight: var(--font-light);
+}
+
+.pricing-list {
+    padding: 1em 0;
+}
+
+.list-item {
+    list-style-type: none;
+    font-family: var(--font-primary);
+    font-weight: var(--font-light);
+    padding: 0.2em 0;
+    font-size: 0.833em;
+}
+
+.branding__example {
+    margin-right: 20%;
+}
+
+@mixin branding--400() {
+}
+
+@mixin branding--700() {
+    .branding h1 {
+        font-size: 2.488rem;
+    }
+
+    .branding p {
+        font-size: 1rem;
+        width: 60%;
+    }
+
+    .branding__info {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .branding__content {
+        display: flex;
+        justify-content: center;
+        padding: 2em;
+        background: url(/img/aris_process.png) no-repeat;
+        background-color: hsl(0, 0%, 17%);
+        background-size: 70%;
+        background-position: center left;
+        border-radius: 10px;
+        width: 90%;
+    }
+    .branding__example {
+        margin-right: 2%;
+        padding: 1em;
+    }
+}
+
+@mixin branding--1080() {
+    .branding h1 {
+        font-size: 2.986rem;
+    }
+
+    .branding__info {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .branding p {
+        font-size: 1.2rem;
+        max-width: 50%;
+    }
+
+    .branding__content {
+        display: flex;
+        justify-content: center;
+        padding: 2em;
+        background: url(/img/aris_process.png) no-repeat;
+        background-color: hsl(0, 0%, 17%);
+        background-size: 50%;
+        background-position: center right -100px;
+        border-radius: 10px;
+        width: 90%;
+    }
+    .branding__example {
+        margin-right: 20%;
+    }
+
+    .branding__pricing-item {
+        padding-left: 2em;
+    }
+
+    .branding__pricing-item h2 {
+        padding-bottom: 1em;
+        font-family: var(--font-primary);
+        font-weight: var(--font-light);
+        // color: hsl(13, 68%, 62%);
+    }
+    .list-item {
+        font-size: 1em;
+    }
+}

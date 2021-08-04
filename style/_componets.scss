@@ -1,8 +1,10 @@
-// a {
-//     display: inline-block;
-//     width: fit-content;
-// }
-
+@font-face {
+    font-family: "good_timesregular";
+    src: url("../assets/fonts/Good_Times/good_times_400-webfont.woff2") format("woff2"),
+        url("../assets/fonts/Good_Times/good_times_400-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
 .button {
     padding: 0.5em 1em;
     display: inline;

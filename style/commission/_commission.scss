@@ -1,0 +1,32 @@
+@import "sections/comms";
+@import "sections/rules";
+@import "sections/digital";
+@import "sections/traditional";
+@import "sections/branding";
+
+@mixin commission--400() {
+    @include comms--400();
+    @include rules--400();
+    @include digital--400();
+    @include traditional--400();
+    @include branding--400();
+    @include contact--400();
+}
+
+@mixin commission--700() {
+    @include comms--700();
+    @include rules--700();
+    @include digital--700();
+    @include traditional--700();
+    @include branding--700();
+    @include contact--700();
+}
+
+@mixin commission--1080() {
+    @include comms--1080();
+    @include rules--1080();
+    @include digital--1080();
+    @include traditional--1080();
+    @include branding--1080();
+    @include contact--1080();
+}
