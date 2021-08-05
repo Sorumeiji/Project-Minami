@@ -44,10 +44,6 @@
         font-size: 1rem;
         width: 70%;
     }
-
-    .rules__content {
-        width: 90%;
-    }
 }
 
 @mixin rules--1080() {
@@ -64,7 +60,6 @@
         background-size: 70%;
         background-position: center left 400px;
         border-radius: 10px;
-        width: 90%;
     }
 
     .rules__list-item {
