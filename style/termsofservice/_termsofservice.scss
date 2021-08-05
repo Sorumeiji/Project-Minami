@@ -1,0 +1,15 @@
+@import 'sections/terms';
+
+@mixin termsofservice--400() {
+    @include terms--400();
+
+}
+
+@mixin termsofservice--700() {
+    @include terms--700();
+ 
+}
+
+@mixin termsofservice--1080() {
+    @include terms--1080();
+}

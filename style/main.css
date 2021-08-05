@@ -154,7 +154,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 2em 0;
-  display: none;
 }
 
 .nav .logo img {
@@ -253,6 +252,13 @@ body {
   border-bottom: 1px solid #ff734d;
 }
 
+.isdisabled {
+  color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
 .container {
   max-width: 75rem;
   display: block;
@@ -295,7 +301,7 @@ body {
 
 .header h1 {
   font-family: "good_timesregular";
-  font-size: 1.728rem;
+  font-size: 1.2rem;
 }
 
 .header p {
@@ -851,6 +857,68 @@ body {
   margin-right: 20%;
 }
 
+.termsofservice {
+  padding: 5em 0;
+}
+
+.termsofservice__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #2b2b2b;
+  margin: 1em 0;
+  padding: 1em;
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+.termsofservice__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.termsofservice__list .list-item:nth-child(2) p:nth-child(1) ~ p {
+  padding-top: 2em;
+  margin-left: 1em;
+  display: block;
+}
+
+.accent-color {
+  color: #ff754f;
+}
+
+.termsofservice__list .list-item p {
+  display: inline;
+  font-size: 0.833rem;
+}
+
+.termsofservice__list .list-item {
+  list-style-image: url(/img/paw-claws.svg);
+  list-style-position: inside;
+  font-size: 0.833rem;
+  font-family: var(--font-primary);
+  font-weight: var(--font-light);
+  width: 80%;
+  padding: 2em 0;
+}
+
 .footer {
   background: #fdf3f0;
   color: #2b2b2b;
@@ -1098,7 +1166,7 @@ body {
     background-size: 70%;
     background-position: center left;
     border-radius: 10px;
-    width: 90%;
+    width: 100%;
   }
 
   .digital__example {
@@ -1176,7 +1244,7 @@ body {
     background-size: 70%;
     background-position: center left;
     border-radius: 10px;
-    width: 90%;
+    width: 100%;
   }
 
   .branding__example {
@@ -1196,7 +1264,7 @@ body {
 @media screen and (min-width: 1080px) {
   .header p {
     font-size: 1.2rem;
-    max-width: 50%;
+    max-width: 60%;
   }
 
   .header h1 {
@@ -1384,7 +1452,7 @@ body {
     background-size: 50%;
     background-position: center right -100px;
     border-radius: 10px;
-    width: 90%;
+    width: 100%;
   }
 
   .digital__example {
@@ -1491,7 +1559,7 @@ body {
     background-size: 50%;
     background-position: center right -100px;
     border-radius: 10px;
-    width: 90%;
+    width: 100%;
   }
 
   .branding__example {
@@ -1519,6 +1587,17 @@ body {
   .contact__content p {
     max-width: 50%;
     font-size: 1.2rem;
+  }
+
+  .termsofservice__list .list-item p {
+    font-size: 1.2em;
+    line-height: 2;
+    width: 80%;
+  }
+
+  .termsofservice__content {
+    padding: 3em auto;
+    padding: 5em;
   }
 
   .footer__content {
