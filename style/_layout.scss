@@ -1,0 +1,76 @@
+.orange-bar {
+    border-bottom: 1px solid hsl(13, 100%, 65%);
+}
+
+.isdisabled {
+    color: currentColor;
+    cursor: not-allowed;
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 75rem;
+    display: block;
+    margin: 0 auto;
+    padding: 0 2em;
+}
+
+.header {
+    display: flex;
+    padding: 10em 0;
+    justify-content: center;
+    background: url(../img/01.png) no-repeat;
+    background-color: #2b2b2b;
+    background-size: cover;
+}
+
+.header__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header img {
+    width: 70%;
+}
+
+.header h1 {
+    font-family: "good_timesregular";
+    font-size: 1.2rem;
+}
+
+.header p {
+    padding: 2em 0;
+    font-size: 0.694rem;
+    line-height: 2;
+    text-align: center;
+    font-family: var(--font-primary);
+    max-width: 90%;
+}
+
+@mixin layout--400() {
+}
+
+@mixin layout--700() {
+    .header p {
+        font-size: 0.833rem;
+        max-width: 45%;
+    }
+    .header h1 {
+        font-family: "good_timesregular";
+        font-size: 2.986rem;
+    }
+}
+
+@mixin layout--1080() {
+    .header p {
+        font-size: 1.2rem;
+        max-width: 60%;
+    }
+    .header h1 {
+        font-family: "good_timesregular";
+        font-size: 3.583rem;
+    }
+}

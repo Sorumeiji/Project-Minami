@@ -1,0 +1,130 @@
+.works {
+    padding: 5em 0;
+}
+
+.works h1 {
+    font-family: var(--font-primary);
+    font-weight: var(--font-bold);
+    border-left: 1px solid #ff754f;
+    line-height: 0.75em;
+    font-size: 1.44rem;
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+
+.works p {
+    font-size: 0.694rem;
+    font-family: var(--font-primary);
+    font-weight: var(--font-light);
+    padding: 2em 0;
+    line-height: 2;
+    max-width: 70%;
+}
+
+.works__content {
+}
+
+.works__gallery {
+    display: flex;
+    padding: 2em;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(0, 0%, 17%);
+    background-position: center right;
+    border-radius: 10px;
+}
+
+.works__items {
+}
+
+.works-item {
+    padding: 1em 0;
+}
+.works-item img {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07),
+        0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+}
+
+@mixin works--400() {
+}
+
+@mixin works--700() {
+    .works h1 {
+        font-size: 2.488rem;
+    }
+
+    .works p {
+        font-size: 0.833rem;
+        width: 60%;
+    }
+
+    .works__gallery {
+        display: flex;
+        // flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background: url(/img/minami_showcase.png) no-repeat;
+        background-color: hsl(0, 0%, 17%);
+        background-position: top 0% left 200px;
+        background-size: 60%;
+        border-radius: 10px;
+        transition: 0.5s ease-in-out;
+    }
+    // .works__gallery:hover {
+    //     background: url(/img/minami_showcase_hover.png) no-repeat;
+    //     background-color: hsl(0, 0%, 17%);
+    //     background-position: top 0% left 200px;
+    //     background-size: 60%;
+    //     border-radius: 10px;
+    //     transition: 0.5s ease-in-out;
+    // }
+
+    .works__items {
+        display: flex;
+        margin: 0 0.5em;
+        padding: 0.1em 0.5em;
+    }
+
+    .works-item {
+        margin: 0 0.5em;
+    }
+}
+
+@mixin works--1080() {
+    .works p {
+        font-size: 1.2rem;
+        max-width: 50%;
+    }
+
+    .works h1 {
+        font-size: 2.986rem;
+    }
+    .works__gallery {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background: url(/img/minami_showcase.png) no-repeat;
+        background-color: hsl(0, 0%, 17%);
+        background-position: top 0% left 500px;
+        background-size: 50%;
+        border-radius: 10px;
+        transition: 0.5s ease-in-out;
+    }
+    // .works__gallery:hover {
+    //     background: url(/img/minami_showcase_hover.png) no-repeat;
+    //     background-color: hsl(0, 0%, 17%);
+    //     background-position: top 0% left 500px;
+    //     background-size: 50%;
+    //     border-radius: 10px;
+    //     transition: 0.5s ease-in-out;
+    // }
+
+    .works__items {
+        display: flex;
+        margin: 0 0.5em;
+    }
+
+    .works-item {
+        margin: 0 0.5em;
+    }
+}

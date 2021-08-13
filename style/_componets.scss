@@ -1,0 +1,33 @@
+@font-face {
+    font-family: "good_timesregular";
+    src: url("../assets/fonts/Good_Times/good_times_400-webfont.woff2") format("woff2"),
+        url("../assets/fonts/Good_Times/good_times_400-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+.button {
+    padding: 0.5em 1em;
+    display: inline;
+    border: 1px solid var(--clr-accent);
+    font-family: var(--font-primary);
+    font-size: 0.833rem;
+    text-transform: uppercase;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07),
+        0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+}
+
+.button:hover {
+    background-color: hsla(13, 100%, 65%, 0.493);
+}
+
+@mixin componet--400() {
+}
+
+@mixin componet--700() {
+    .button {
+        font-size: 0.833rem;
+    }
+}
+
+@mixin componet--1080() {
+}
