@@ -61,12 +61,7 @@ body {
     text-rendering: optimizeSpeed;
     line-height: 1.5;
     min-height: 100%;
-<<<<<<< HEAD
-    background: url(/img/daimond_overlay_test.png) repeat;
-    background-position: 0% 87%;
-=======
     background: url(/img/daimond_overlay_test.png);
->>>>>>> test
     background-color: #262626;
     color: #FDF3F0;
 }
@@ -188,7 +183,7 @@ nav ul li a {
 }
 
 .header__banner {
-    padding: 8em 0;
+    padding: 5em 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
