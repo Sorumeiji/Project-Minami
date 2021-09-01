@@ -93,12 +93,13 @@ select {
 .container > :first-child {
   padding-bottom: 5rem;
   padding-top: 2rem;
-  background-color: #2b2b2b;
-  color: #fdf3f0;
+  background-color: #1c1c1c;
+  color: #ededed;
+  font-family: "Open Sans", sans-serif;
 }
 
 .container > :last-child {
-  background-color: #fdf3f0;
+  background-color: #ededed;
 }
 
 .logo {
@@ -131,6 +132,16 @@ select {
   margin: 0 0.5rem;
 }
 
+.dropbtn {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.dropbtn:hover {
+  cursor: pointer;
+  color: #ffa385;
+}
+
 .hamburger {
   display: block;
 }
@@ -155,12 +166,87 @@ select {
   display: none;
 }
 
+.main-nav__item::after {
+  font-family: "Font Awesome 6 Duotone";
+  font-weight: 900;
+  opacity: 0;
+  content: "􏄅";
+  color: #ededed;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+a[class=main-nav__item]:hover::after {
+  font-family: "Font Awesome 6 Duotone";
+  font-weight: 900;
+  opacity: 1;
+  content: "􏄅";
+  color: #ffa385;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+.main-nav ul li + li {
+  margin-top: 0.5rem;
+}
+
 .main-nav a {
-  color: #fdf3f0;
+  color: #ffa385;
+  font-family: "Open Sans", sans-serif;
+}
+
+.main-nav a:hover {
+  color: #ededed;
+}
+
+.dropdown-content {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+
+.dropdown-content li {
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.dropdown-content li a {
+  color: #ededed;
+}
+
+.dropdown-content li a:hover {
+  color: #ffa385;
+}
+
+.show {
+  display: block;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.active {
+  color: #ededed !important;
+}
+
+.active::after {
+  content: "􏄅";
+  margin-left: 0.5rem;
+  font-family: "Font Awesome 6 Duotone";
+  font-weight: 900;
+  color: #ffa385;
+  opacity: 1;
 }
 
 .social__menu a {
-  color: #fdf3f0;
+  color: #ededed;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.social__menu a:hover {
+  color: #ffa385;
 }
 
 .featured {
@@ -219,7 +305,8 @@ select {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 0;
+    padding-bottom: 2rem;
+    padding-top: 2;
   }
 
   .container > :last-child {
@@ -278,24 +365,6 @@ select {
 
   .main-nav ul li {
     list-style: none;
-  }
-
-  .main-nav__item::after {
-    font-family: "Font Awesome 6 Duotone";
-    font-weight: 900;
-    opacity: 0;
-    content: "􏄅";
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-  }
-
-  a[class=main-nav__item]:hover::after {
-    font-family: "Font Awesome 6 Duotone";
-    font-weight: 900;
-    opacity: 1;
-    content: "􏄅";
-    margin-left: 0.5rem;
-    cursor: pointer;
   }
 
   .dropbtn__content {

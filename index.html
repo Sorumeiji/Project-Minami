@@ -37,10 +37,11 @@
                             <i class="fad fa-globe-americas"></i>
                             <p>ENGLISH</p>
                             <i class="fad fa-sort-down"></i>
+                            <ul class="dropbtn__content">
+                                <li><a href="#">Link 1</a></li>
+                            </ul>
                         </div>
-                        <div class="dropbtn__content">
-                            <a href="#">Link 1</a>
-                        </div>
+
                     </div>
                 </div>
 
@@ -54,21 +55,27 @@
                 </div>
 
                 <nav class="main-nav">
-                    <ul>
-                        <li><a class="main-nav__item" href="#">FEATURED</a></li>
-                        <li><a class="main-nav__item" href="#">COMMISSIONS</a></li>
+                    <ul id="main-nav__list">
+                        <li><a class="main-nav__item active" href="#">FEATURED</a></li>
+                        <li><a id="commissions" class="main-nav__item" href="#">COMMISSIONS</a>
+                            <ul class="dropdown-content">
+                                <li><a href="">Emotes</a></li>
+                                <li><a href="">Simple illustrations</a></li>
+                                <li><a href="">Terms of Service </a></li>
+                            </ul>
+                        </li>
                         <li><a class="main-nav__item" href="#">ABOUT</a></li>
-                        <li><a class="main-nav__item" href="#">TWITCH</a></li>
+                        <li><a class="main-nav__item" href="https://store.nyacchii.com" target="_blank">STORE</a></li>
                         <li><a class="main-nav__item" href="#">CONTACT</a></li>
                     </ul>
                 </nav>
             </div>
             <div class="sidebar__footer">
                 <ul class="social__menu">
-                    <li><a href=""> <i class="fab fa-twitch"></i></a></li>
-                    <li><a href=""> <i class="fab fa-twitter"></i></a></li>
-                    <li><a href=""> <i class="fab fa-instagram"></i></a></li>
-                    <li><a href=""> <i class="fab fa-youtube"></i></a></li>
+                    <li><a href="" target="_blank"> <i class="fab fa-twitch"></i></a></li>
+                    <li><a href="" target="_blank"> <i class="fab fa-twitter"></i></a></li>
+                    <li><a href="" target="_blank"> <i class="fab fa-instagram"></i></a></li>
+                    <li><a href="" target="_blank"> <i class="fab fa-youtube"></i></a></li>
                 </ul>
             </div>
         </div>
