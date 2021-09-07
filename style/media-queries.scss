@@ -6,4 +6,5 @@
 
 @media screen and (min-width: 1080px) {
     @include layout--1080();
+    @include nav--1080();
 }

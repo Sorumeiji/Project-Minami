@@ -2,20 +2,25 @@
     padding-bottom: 5rem;
     padding-top: 2rem;
     // background: url(../img/daimond_overlay_test.png);
-    background-color: hsl(0, 0%, 11%);
-    color: hsl(0, 0%, 93%);
-    font-family: "Open Sans", sans-serif;
+    background-color: var(--black-color);
+    color: var(--grey-color);
+    font-family: var(--primary-font);
+    position: relative;
 }
 
 .container > :last-child {
-    background-color: hsl(0, 0%, 93%);
+    background-color: var(--grey-color);
+    position: relative;
+    z-index: -1;
 }
 
 .logo {
-    width: 45%;
-    // margin: 0 auto;
     padding-bottom: 3rem;
-    margin-left: 4rem;
+}
+
+.logo img {
+    width: 50%;
+    margin: 0 auto;
 }
 
 .sidebar__footer {
@@ -30,31 +35,26 @@
     padding: 0.5rem 1rem;
     margin: 0 auto;
     max-width: 80%;
+    line-height: 1.8;
+    font-size: 1rem;
+    text-align: left;
 }
 
-.language__select .dropbtn {
-    display: flex;
-}
-
-.language__select p {
+.language__select li a {
     margin: 0 0.5rem;
+    color: var(--grey-color);
 }
 
-.dropbtn {
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-}
-
-.dropbtn:hover {
-    cursor: pointer;
-    color: hsl(15, 100%, 76%);
+.language__select li a:hover {
+    color: var(--salmon-color);
 }
 
 .hamburger {
     display: block;
+}
+
+.hamburger a {
+    color: var(--grey-color);
 }
 
 .sidebar__language {
@@ -63,106 +63,6 @@
     padding-bottom: 5rem;
     padding-right: 2rem;
     padding-left: 2rem;
-}
-
-.dropbtn__content {
-    display: none;
-}
-
-.main-nav {
-    display: none;
-}
-
-.main-nav__item::after {
-    font-family: "Font Awesome 6 Duotone";
-    font-weight: 900;
-    opacity: 0;
-    content: "\10f105";
-    color: hsl(0, 0%, 93%);
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-}
-
-a[class="main-nav__item"]:hover::after {
-    font-family: "Font Awesome 6 Duotone";
-    font-weight: 900;
-    opacity: 1;
-    content: "\10f105";
-    color: hsl(15, 100%, 76%);
-    margin-left: 0.5rem;
-    cursor: pointer;
-}
-
-.main-nav ul li + li {
-    margin-top: 0.5rem;
-}
-
-.main-nav a {
-    color: hsl(15, 100%, 76%);
-    font-family: "Open Sans", sans-serif;
-}
-
-.main-nav a:hover {
-    color: hsl(0, 0%, 93%);
-}
-
-.dropdown-content {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: none;
-}
-
-.dropdown-content li {
-    margin-left: 1rem;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.dropdown-content li a {
-    color: hsl(0, 0%, 93%);
-}
-
-.dropdown-content li a:hover {
-    color: hsl(15, 100%, 76%);
-}
-
-.show {
-    display: block;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-}
-
-.active {
-    color: hsl(0, 0%, 93%) !important;
-}
-
-.active::after {
-    content: "\10f105";
-    margin-left: 0.5rem;
-    font-family: "Font Awesome 6 Duotone";
-    font-weight: 900;
-    color: hsl(15, 100%, 76%);
-    opacity: 1;
-}
-
-.social__menu a {
-    color: hsl(0, 0%, 93%);
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-}
-
-.social__menu a:hover {
-    color: hsl(15, 100%, 76%);
 }
 
 .featured {
@@ -214,6 +114,7 @@ a[class="main-nav__item"]:hover::after {
         display: flex;
         justify-content: center;
         padding: 0;
+        z-index: 0;
     }
 
     // Sidebar Content Layout
@@ -241,22 +142,16 @@ a[class="main-nav__item"]:hover::after {
         padding-bottom: 0;
     }
 
+    .logo img {
+        width: 100%;
+        margin: 0;
+    }
+
     .summary p {
         padding: 0.5rem 0;
         margin: 0;
         max-width: 80%;
-    }
-
-    .main-nav {
-        display: block;
-    }
-
-    .main-nav ul li {
-        list-style: none;
-    }
-
-    .dropbtn__content {
-        display: none;
+        text-align: left;
     }
 
     .sidebar__language {
