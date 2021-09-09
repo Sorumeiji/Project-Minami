@@ -310,7 +310,7 @@ a[class=main-nav__item]:hover::after {
   padding-left: 2rem;
 }
 
-.featured {
+.content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
