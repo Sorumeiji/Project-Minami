@@ -32,15 +32,6 @@
     transition: all 0.5s ease;
 }
 
-a[class="main-nav__item"]:hover::after {
-    font-family: "Font Awesome 6 Duotone";
-    font-weight: 900;
-    opacity: 1;
-    content: "\10f105";
-    color: hsl(15, 100%, 76%);
-    margin-left: 0.5rem;
-    cursor: pointer;
-}
 
 .main-nav ul li + li {
     margin-top: 0.5rem;

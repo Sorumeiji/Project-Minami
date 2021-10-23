@@ -22,10 +22,6 @@
     margin: 0 auto;
 }
 
-.sidebar__footer {
-    display: none;
-}
-
 .summary {
     padding-bottom: 2rem;
 }
@@ -40,15 +36,6 @@
     text-align: left;
 }
 
-.language__select li a {
-    margin: 0 0.5rem;
-    color: var(--grey-color);
-}
-
-.language__select li a:hover {
-    color: var(--salmon-color);
-}
-
 .hamburger {
     display: block;
 }
@@ -57,31 +44,10 @@
     color: var(--grey-color);
 }
 
-.sidebar__language {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 5rem;
-    padding-right: 2rem;
-    padding-left: 2rem;
-}
-
 .content {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.featured__content {
-    display: grid;
-    grid-gap: 1rem;
-    padding: 4rem;
-}
-
-@supports (width: min(30%, 100%)) {
-    .featured__content {
-        grid-template-columns: repeat(2, minmax(min(30%, 100%), 1fr));
-    }
 }
 
 @mixin layout--400() {
@@ -117,7 +83,14 @@
         z-index: 0;
     }
 
-    // Sidebar Content Layout
+    .sidebar__content {
+        opacity: 0;
+        opacity: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 
     .logo,
     .summary,
@@ -128,15 +101,6 @@
     .hamburger {
         display: none;
     }
-
-    .language__select {
-        display: flex;
-        flex-direction: column;
-        margin-left: 2rem;
-        margin-top: 1rem;
-        margin-bottom: 5rem;
-    }
-
     .logo {
         width: 45%;
         padding-bottom: 0;
@@ -151,33 +115,9 @@
         padding: 0.5rem 0;
         margin: 0;
         max-width: 80%;
+        font-size: 0.9em;
         text-align: left;
     }
-
-    .sidebar__language {
-        display: block;
-        padding: 0;
-    }
-
-    .sidebar__footer {
-        display: flex;
-        justify-content: center;
-        padding: 1rem;
-    }
-
-    .sidebar__footer ul {
-        display: flex;
-    }
-
-    .sidebar__footer ul li {
-        list-style: none;
-    }
-
-    .sidebar__footer ul li + li {
-        margin-left: 1rem;
-    }
-
-    // TEMP
 
     .featured__content {
         padding: 0;

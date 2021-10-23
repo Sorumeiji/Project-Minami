@@ -1,0 +1,54 @@
+@media screen and (min-width: 1080px) {
+    .terms__content {
+        display: flex;
+        flex-direction: column;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .terms__content > div {
+        padding: 2em 0;
+    }
+
+    .terms__content h1 {
+        padding: 1em 0;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .terms__summary {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .terms__summary p {
+        max-width: 600px;
+        width: 60%;
+        font-size: 1.125rem;
+    }
+
+    .terms__downloads li a {
+        color: hsl(0, 0%, 11%);
+        font-size: 1.125rem;
+    }
+
+    .terms__acceptance {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .terms__acceptance-items {
+        display: flex;
+    }
+
+    .terms__acceptance-item ul {
+        padding: 1em;
+        width: 90%;
+    }
+
+    .terms__acceptance-item ul li {
+        padding: 0.3em;
+        font-size: 1.125rem;
+        list-style-type: circle;
+    }
+}

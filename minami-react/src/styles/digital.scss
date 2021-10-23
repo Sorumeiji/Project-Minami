@@ -1,0 +1,44 @@
+.digital__content {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    width: 80%;
+}
+
+.digital__content h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.digital {
+    display: flex;
+    position: relative;
+}
+
+.digital__prices {
+    display: flex;
+    margin-left: 20%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.salmon-accent {
+    color: var(--salmon-color);
+}
+
+.digital__prices h2 {
+    font-size: 1.25em;
+}
+
+.digital__prices h2::after {
+    content: "";
+    margin-left: 20%;
+    display: block;
+    background: black;
+    width: 60%;
+    height: 1px;
+    position: absolute;
+    bottom: 1;
+    left: 0;
+}

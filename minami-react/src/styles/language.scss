@@ -1,0 +1,27 @@
+.language__select li a {
+    margin: 0 0.5rem;
+    color: var(--grey-color);
+}
+
+.language__select li a:hover {
+    color: var(--salmon-color);
+}
+
+.sidebar__language {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+@media screen and (min-width: 1080px) {
+    .language__select {
+        display: flex;
+        flex-direction: column;
+        margin-left: 2rem;
+    }
+    .sidebar__language {
+        display: block;
+        padding: 0;
+    }
+}

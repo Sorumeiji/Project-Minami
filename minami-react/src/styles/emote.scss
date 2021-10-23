@@ -1,0 +1,51 @@
+@media screen and (min-width: 1080px) {
+    .emotes__content {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .emotes__content h1 {
+        margin: 0 auto;
+        padding: 1em;
+        text-transform: uppercase;
+    }
+
+    .emotes {
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .emotes__static {
+        margin-right: 1em;
+    }
+    .emotes__animated {
+        margin-left: 1em;
+    }
+
+    .emotes__items {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0.5%, 1fr));
+    }
+
+    .emotes__item {
+        padding: 1em;
+    }
+
+    .emotes__description {
+        padding: 1em;
+        font-size: 0.7em;
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--primary-font);
+    }
+
+    .accent-orange {
+        color: var(--salmon-color);
+    }
+
+    .emotes__disclaimer {
+        padding: 1em;
+        max-width: 350px;
+    }
+}

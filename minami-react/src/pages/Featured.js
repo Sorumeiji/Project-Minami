@@ -4,41 +4,85 @@ import item3 from '../images/item3.png';
 import item4 from '../images/item4.png';
 import item5 from '../images/item5.png';
 import item6 from '../images/item6.png';
+import { motion, AnimatePresence, animate } from 'framer-motion';
+import '../styles/featured.scss';
 
 function Featured() {
 	return (
-		<div id='featured' className='featured__content'>
+		<motion.div
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1 }}
+			exit={{ opacity: 0 }}
+			transition={{ easeIn: [0.17, 0.67, 0.83, 0.67], duration: 1 }}
+			id='featured'
+			className='featured__content'>
 			<div className='featured__item'>
 				<a href=''>
-					<img src={item1} />
+					<motion.img
+						src={item1}
+						whileHover={{
+							filter: 'grayscale(100%)',
+							transition: { duration: 0.5 },
+						}}
+					/>
 				</a>
 			</div>
 			<div className='featured__item'>
 				<a href=''>
-					<img src={item2} />
+					<motion.img
+						whileHover={{
+							filter: 'grayscale(100%)',
+							transition: { duration: 0.5 },
+						}}
+						src={item2}
+					/>
 				</a>
 			</div>
 			<div className='featured__item'>
 				<a href=''>
-					<img src={item3} />
+					<motion.img
+						whileHover={{
+							filter: 'grayscale(100%)',
+							transition: { duration: 0.5 },
+						}}
+						src={item3}
+					/>
 				</a>
 			</div>
 			<div className='featured__item'>
 				<a href=''>
-					<img src={item4} />
+					<motion.img
+						whileHover={{
+							filter: 'grayscale(100%)',
+							transition: { duration: 0.5 },
+						}}
+						src={item4}
+					/>
 				</a>
 			</div>
 			<div className='featured__item'>
 				<a href=''>
-					<img src={item5} />
+					<motion.img
+						whileHover={{
+							filter: 'grayscale(100%)',
+							transition: { duration: 0.5 },
+						}}
+						src={item5}
+					/>
 				</a>
 			</div>
 			<div className='featured__item'>
 				<a href=''>
-					<img src={item6} />
+					<motion.img
+						whileHover={{
+							filter: 'grayscale(100%)',
+							transition: { duration: 0.5 },
+						}}
+						src={item6}
+					/>
 				</a>
 			</div>
-		</div>
+		</motion.div>
 	);
 }
 

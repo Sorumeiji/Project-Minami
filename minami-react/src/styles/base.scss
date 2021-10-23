@@ -1,6 +1,5 @@
 :root {
     // Colors
-
     --salmon-color: hsl(15, 100%, 76%);
     --grey-color: hsl(0, 0%, 93%);
     --black-color: hsl(0, 0%, 11%);
@@ -8,7 +7,7 @@
     //  Fonts
     --primary-font: "Open Sans", sans-serif;
 
-    // font-weight
+    // Font-weight
     --regular-weight: 300;
     --semibold-weight: 600;
 }
@@ -113,8 +112,4 @@ button,
 textarea,
 select {
     font: inherit;
-}
-
-.dropdown-content {
-    display: none;
 }

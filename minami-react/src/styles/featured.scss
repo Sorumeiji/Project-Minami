@@ -1,0 +1,17 @@
+.featured__content {
+    display: grid;
+    grid-gap: 1rem;
+    padding: 4rem;
+}
+
+@supports (width: min(30%, 100%)) {
+    .featured__content {
+        grid-template-columns: repeat(2, minmax(min(30%, 100%), 1fr));
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .featured__content {
+        padding: 0;
+    }
+}

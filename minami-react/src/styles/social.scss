@@ -1,0 +1,28 @@
+.social {
+    display: none;
+}
+@media screen and (min-width: 1080px) {
+    .social {
+        display: flex;
+        justify-content: center;
+    }
+
+    .social ul {
+        display: flex;
+    }
+
+    .social ul li {
+        list-style: none;
+    }
+
+    .social ul li a {
+    }
+
+    .social ul li a:hover {
+        color: var(--salmon-color);
+    }
+
+    .social ul li + li {
+        margin-left: 1rem;
+    }
+}

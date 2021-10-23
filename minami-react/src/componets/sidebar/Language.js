@@ -1,4 +1,6 @@
+import { faGlobeAmericas } from '@fortawesome/pro-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import '../../styles/language.scss';
 
 function Language() {
 	return (
@@ -6,7 +8,7 @@ function Language() {
 			<ul id='language__select-list' className='language__select'>
 				<li>
 					<a id='lang-btn' href='#'>
-						ESPAÑOL
+						<FontAwesomeIcon icon={faGlobeAmericas} /> ESPAÑOL
 					</a>
 				</li>
 			</ul>
