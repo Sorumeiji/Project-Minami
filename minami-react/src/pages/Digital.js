@@ -32,17 +32,10 @@ function Digital() {
 							<span className='salmon-accent'>FULL BODY</span>: $55 USD
 						</h2>
 					</div>
-					{/* <div className='digital__prices-item3'>
-						<h2>
-							<span>EXTRA CHARCTER</span>: $25- $45 USD
-						</h2>
-					</div> */}
 				</div>
 			</div>
-			<div className='digital__disclaimer'>
-				<p>
-					“ The prices can change depending on the complexity of the characters and background. “
-				</p>
+			<div className='disclaimer'>
+				<p>*The prices can change depending on the complexity of the characters and background.</p>
 			</div>
 		</motion.div>
 	);

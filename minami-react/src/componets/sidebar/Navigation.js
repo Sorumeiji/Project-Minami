@@ -48,7 +48,12 @@ function Navigation() {
 							Comissions
 						</Link>
 						{toggle.open && (
-							<motion.ul className='dropdown_content'>
+							<motion.ul
+								initial={{ opacity: 0 }}
+								animate={{ opacity: 1 }}
+								exit={{ opacity: 0 }}
+								transition={{ easeIn: [0.17, 0.67, 0.83, 0.67], duration: 1 }}
+								className='dropdown_content'>
 								<li>
 									<NavLink exact to='/commissions/emotes'>
 										Emotes

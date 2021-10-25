@@ -87,7 +87,7 @@ function Emotes() {
 					</div>
 				</div>
 			</div>
-			<div className='emotes__disclaimer'>
+			<div className='disclaimer'>
 				<p>* The prices can change depending on the complexity of the characters and background.</p>
 			</div>
 		</motion.div>
