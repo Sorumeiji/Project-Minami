@@ -1,0 +1,16 @@
+.contact {
+    max-width: 900px;
+    font-size: 1.25em;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact h1 {
+    padding: 1em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.contact p {
+    padding: 1em;
+}
