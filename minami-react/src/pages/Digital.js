@@ -11,7 +11,7 @@ function Digital() {
 			transition={{ easeIn: [0.17, 0.67, 0.83, 0.67], duration: 1 }}
 			id='digital'
 			className='digital__content'>
-			<h1>Digital Commissions </h1>
+			<h1>Digital Comissions </h1>
 			<div className='digital'>
 				<div className='digital__preview'>
 					<img src={aris} />
@@ -19,17 +19,17 @@ function Digital() {
 				<div className='digital__prices'>
 					<div className='digital__prices-item1'>
 						<h2>
-							<span className='salmon-accent'>BUST</span>: $35 USD
+							<span>BUST</span>: $35 USD
 						</h2>
 					</div>
 					<div className='digital__prices-item2'>
 						<h2>
-							<span className='salmon-accent'>HALF BODY</span>: $45 USD
+							<span>HALF BODY</span>: $45 USD
 						</h2>
 					</div>
 					<div className='digital__prices-item3'>
 						<h2>
-							<span className='salmon-accent'>FULL BODY</span>: $55 USD
+							<span>FULL BODY</span>: $55 USD
 						</h2>
 					</div>
 				</div>

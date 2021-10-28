@@ -35,7 +35,7 @@ function Tos() {
 				</ul>
 			</div>
 			<div className='terms__acceptance'>
-				<h1>ACCEPTANCE OF SERVICE</h1>
+				<h1>Acceptance of Service</h1>
 				<div className='terms__acceptance-items'>
 					<div className='terms__acceptance-item'>
 						<ul>
