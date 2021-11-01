@@ -16,5 +16,16 @@
     .contact p {
         padding: 1em;
         font-weight: 300;
+        max-width: 600px;
+    }
+
+    .contact a {
+        color: #131313;
+        font-size: "Open Sans", sans-serif;
+        text-decoration: underline;
+    }
+
+    .contact a:hover {
+        color: var(--salmon-color);
     }
 }

@@ -1,4 +1,5 @@
 import logo from '../../images/Nyacchii_logo.20eed2f1.svg';
+import '../../styles/intro.scss';
 
 function Intro() {
 	return (

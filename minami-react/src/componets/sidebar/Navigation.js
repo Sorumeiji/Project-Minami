@@ -5,6 +5,7 @@ import '../../styles/navigation.scss';
 import { faGlobeAmericas } from '@fortawesome/pro-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { motion, AnimatePresence, animate } from 'framer-motion';
+import logo from '../../images/Nyacchii_logo.20eed2f1.svg';
 
 function Navigation() {
 	const [toggle, setToggle] = useState({ open: false });
@@ -37,7 +38,9 @@ function Navigation() {
 	return (
 		<aside className='Navigation'>
 			<nav className='main-nav'>
-				<ul id='main-nav__list'>
+				<h2 className='main-nav__logo'>NYACCHII</h2>
+				<input type='checkbox' id='main-nav__toggle' className='main-nav__toggle' />
+				<ul className='main-nav__list'>
 					<li>
 						<NavLink exact to='/' className='main-nav__item'>
 							Featured
@@ -87,6 +90,10 @@ function Navigation() {
 						</NavLink>
 					</li>
 				</ul>
+				<label for='main-nav__toggle' className='main-nav__label'>
+					<span></span>
+				</label>
+				{/* <a href='#'>M</a> */}
 			</nav>
 		</aside>
 	);

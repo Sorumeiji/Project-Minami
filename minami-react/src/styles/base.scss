@@ -2,7 +2,7 @@
     // Colors
     --salmon-color: hsl(15, 100%, 76%);
     --grey-color: hsl(0, 0%, 93%);
-    --black-color: hsl(0, 0%, 11%);
+    --black-color: hsl(0, 0%, 7%);
 
     //  Fonts
     --primary-font: "Open Sans", sans-serif;
@@ -78,9 +78,17 @@ body {
 
 body {
     text-rendering: optimizeSpeed;
-    line-height: 1.5;
+    line-height: 1.7;
     min-height: 100vh;
-    color: #222;
+    color: #131313;
+    font-family: "Open Sans", sans-serif;
+    background-color: #ededed;
+}
+
+h1,
+h2 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
 }
 
 /* A elements that don't have a class get default styles */
@@ -91,9 +99,15 @@ a:not([class]) {
 
 a {
     font-family: "Open Sans", sans-serif;
+    font-weight: 300;
     text-decoration: none;
     transition: ease-in 0.3s;
     color: #fff;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
 }
 
 /* Make images easier to work with */

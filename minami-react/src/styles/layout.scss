@@ -1,39 +1,13 @@
 #container > :first-child {
-    padding-bottom: 5rem;
-    padding-top: 2rem;
     background-color: var(--black-color);
     color: var(--grey-color);
     font-family: var(--primary-font);
-    position: relative;
 }
 
 #container > :last-child {
     background-color: var(--grey-color);
-    position: relative;
+
     z-index: -1;
-}
-
-.logo {
-    padding-bottom: 3rem;
-}
-
-.logo img {
-    width: 50%;
-    margin: 0 auto;
-}
-
-.summary {
-    padding-bottom: 2rem;
-}
-
-.summary p {
-    padding: 0.5rem 1rem;
-    margin: 0 auto;
-    max-width: 80%;
-    width: 400px;
-    line-height: 1.8;
-    font-size: 1rem;
-    text-align: left;
 }
 
 .hamburger {
@@ -44,16 +18,19 @@
     color: var(--grey-color);
 }
 
+.sidebar__content {
+    opacity: 0;
+    opacity: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 .content {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-@mixin layout--400() {
-}
-
-@mixin layout--700() {
+    margin-top: 4em;
 }
 
 @media screen and (min-width: 1080px) {
@@ -65,30 +42,26 @@
         gap: 0;
     }
     #container > :first-child {
+        padding-bottom: 5rem;
         flex-grow: 1;
         flex-basis: 30%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        position: relative;
         padding-bottom: 2rem;
         padding-top: 2;
+        padding-top: 2rem;
     }
     #container > :last-child {
         flex-basis: 0;
         flex-grow: 999;
         min-width: 50%;
         display: flex;
+        position: relative;
         justify-content: center;
         padding: 0;
         z-index: 0;
-    }
-
-    .sidebar__content {
-        opacity: 0;
-        opacity: 0;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
     }
 
     .logo,
@@ -110,12 +83,8 @@
         margin: 0;
     }
 
-    .summary p {
-        padding: 0.5rem 0;
-        margin: 0;
-        max-width: 80%;
-        font-size: 0.9em;
-        text-align: left;
+    .content {
+        margin-top: 0;
     }
 
     .featured__content {

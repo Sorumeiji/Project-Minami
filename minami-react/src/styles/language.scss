@@ -1,5 +1,10 @@
+.Language {
+    order: 2;
+}
+
 .language__select {
     margin-bottom: 3em;
+    display: none;
 }
 .language__select li a {
     margin: 0 0.5rem;
