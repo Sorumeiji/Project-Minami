@@ -3,7 +3,7 @@
     flex-direction: column;
     max-width: 900px;
     padding: 1em;
-    width: 80%;
+    width: 100%;
 }
 
 .digital__content h1 {
@@ -16,32 +16,37 @@
 
 .digital {
     display: flex;
+    flex-direction: column;
     position: relative;
 }
 
+.digital__preview {
+    margin: 0 auto;
+}
+
 .digital__prices {
+    padding: 2em;
     display: flex;
-    margin-left: 40%;
+    margin: 0 auto;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-end;
+    justify-content: center;
+}
+
+.digital__prices h2 {
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 0.5em;
 }
 
 .salmon-accent {
     color: var(--salmon-color);
 }
 
-.digital__prices h2 {
-    font-size: 0.7rem;
-    font-weight: 300;
-}
-
 .digital__prices h2::after {
-    content: "";
     margin-left: 30%;
     display: block;
     background: black;
-    width: 70%;
+    width: 80%;
     height: 1px;
     position: absolute;
     bottom: 1;
@@ -66,7 +71,12 @@
 
     .digital {
         display: flex;
+        flex-direction: row;
         position: relative;
+    }
+
+    .digital__preview {
+        margin: 0;
     }
 
     .digital__prices {
@@ -91,7 +101,7 @@
         margin-left: 20%;
         display: block;
         background: black;
-        width: 60%;
+        width: 65%;
         height: 1px;
         position: absolute;
         bottom: 1;

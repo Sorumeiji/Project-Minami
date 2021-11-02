@@ -15,6 +15,8 @@
 
 .emotes {
     display: flex;
+    padding: 1em;
+    flex-direction: column;
     margin: 0 auto;
 }
 
@@ -34,9 +36,13 @@
     padding: 1em;
 }
 
+.emotes__description {
+    padding: 1em;
+}
+
 .emotes__description h2 {
     padding: 1em;
-    font-size: 0.7em;
+    font-size: 1em;
     text-align: center;
     text-transform: uppercase;
     color: var(--primary-font);
@@ -60,6 +66,7 @@
 
     .emotes {
         display: flex;
+        flex-direction: row;
         margin: 0 auto;
     }
 

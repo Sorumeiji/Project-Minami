@@ -1,11 +1,43 @@
+.contact {
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    padding: 3em;
+}
+
+.contact h1 {
+    padding: 2em;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.contact p {
+    padding: 1em;
+    font-weight: 300;
+    max-width: 900px;
+    font-size: 1rem;
+}
+
+.contact a {
+    color: #131313;
+    font-size: "Open Sans", sans-serif;
+    text-decoration: underline;
+}
+
+.contact a:hover {
+    color: var(--salmon-color);
+}
+
 @media screen and (min-width: 1080px) {
     .contact {
         max-width: 900px;
         font-size: 1.25em;
         display: flex;
         flex-direction: column;
+        padding: 0;
     }
-
     .contact h1 {
         padding: 2em;
         text-transform: capitalize;
